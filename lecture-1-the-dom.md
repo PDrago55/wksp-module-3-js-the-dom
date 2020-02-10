@@ -83,10 +83,21 @@ We won't be using these methods very much at all.
 Instead, we will use these methods
 
 - [`.getElementById()`](https://www.w3schools.com/jsref/met_document_getelementbyid.asp)
+
+better to use ID because there are only one ID's on a page
+
+
 - [`.querySelector()`](https://www.w3schools.com/jsref/met_document_queryselector.asp)
 
 ```js
 // Example
+
+document.getElementById ('my-div')
+document.querySelector('body')
+document.querySelector('#my-div') for an ID
+document.querySelector('.my-div') for a Class
+document.querySelector('div.bacon > ul')
+document.querySelector('div.bacon ul.list')
 
 ```
 
@@ -100,12 +111,14 @@ Instead, we will use these methods
 
 You can modify the content of a leaf, an end node with 
 
-- [`.innerText()`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
-- [`.innerHTML()`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
+- [`.innerText`](https://www.w3schools.com/jsref/prop_node_innertext.asp)
+- [`.innerHTML`](https://www.w3schools.com/jsref/prop_html_innerhtml.asp) 
 
 ```js
 // Example
 
+const myTittle = document.getElementById('my-title');
+myTitle.innerText = 'New Title';
 ```
 
 ---
@@ -128,6 +141,10 @@ To add a new node to an HTML page, you need to do it in 3 steps.
 ```js
 // Example
 
+const paragraph document.createElement('p');  //paragraph -> if you call this variable it return <p></p>
+paragraph.innerText = 'new hacker right here.'; //now if you call paragraph, it will return <p>'text'</p>
+document.querySelector('body').appendChild(paragraph); // this creates a new branch in the body of our HTML
+paragraph.id = 'new-id'; //adding an id
 ```
 
 ---
@@ -138,6 +155,7 @@ We can style elements from JavaScript.
 
 - Use the element's `style` attribute.
 - Modify the `classList` of the element.
+// advantage of 'classList' is that you 
 
 ---
 
@@ -152,10 +170,12 @@ We can style elements from JavaScript.
 const myDiv = document.getElementById('my-div');
 
 myDiv.style.background = "purple";
+
 ```
 
 ⚠️ Houston. We have a problem!
-
+what if we have a property called "border-radius", you'll need to use camelCase in order for Javascript to read it...
+myDiv.style.borderRadius = '23px'
 ---
 
 #### Using `classList`
@@ -178,11 +198,11 @@ To modify a `classList`, we have a few methods we can call.
 
 ```js
 // Example
-myDiv.classList.add('primary');
+myDiv.classList.add('primary'); // 
 
 myDiv.classList.remove('secondary');
 
-myDiv.classList.toggle('active');
+myDiv.classList.toggle('active'); // toggle removes a class if it already exists or adds them if they do not exist. can be used for dropdowns in navbars
 ```
 ---
 

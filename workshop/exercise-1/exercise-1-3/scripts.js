@@ -1,3 +1,4 @@
+
 const header = document.createElement('h1');
 header.innerText = 'The best How I Met Your Mother episode (according to fans)';
 document.getElementById('main').appendChild(header);
@@ -7,6 +8,7 @@ document.getElementById('main').appendChild(header);
 const part1 = document.createElement('p');
 part1.innerText = 'As impossible as it seems to name just 1 of the 208 legendary episodes as the “best”, the fans have spoken and the highest rated episode is… wait for it…';
 document.getElementById('main').appendChild(part1);
+
 
 
 const subTitle = document.createElement('h2');
@@ -36,13 +38,51 @@ ye.setAttribute('href', 'https://himym2017.wordpress.com/2017/03/25/the-best-him
 document.getElementById('main').appendChild(ye);
 
 
-const nuh = document.createElement('link');
-nuh.setAttribute('rel', 'stylesheet');
-nuh.setAttribute('href', './styles.css');
-// style.setAttribute('class', 'css');
-document.querySelector('head').appendChild(nuh);
+const box = document.getElementById("main");
+document.body.style.background = "rgba(246,187,33, .8) url('./images/yellow-umbrella.jpg') no-repeat";
+box.style.backgroundSize = "100%";
+box.style.backgroundColor = 'white';
+box.style.width = '630px';
+box.style.borderRadius = '4px';
+box.style.padding = '15px';
+box.style.margin = '30px';
+box.style.alignContent = "center";
+box.style.boxShadow = "8px 10px 25px 0 rgba(128, 128, 128, .44)";
+
+h1.style.fontFamily = "'Open Sans', sans-serif";
+h1.style.textAlign = 'center';
+
+const box1 = document.getElementById("main");
+document.body.style.background = "rgba(246,187,33, .8) url('./images/yellow-umbrella.jpg') no-repeat";
+box1.style.fontFamily = "Playfair Display', serif";
+box.style.backgroundSize = "100%";
 
 
+
+
+
+
+// document.body.style.backgroundImage = "url('./images/yellow-umbrella.jpg')";
+
+
+
+// const nuh = document.createElement('link');
+// nuh.setAttribute('rel', 'stylesheet');
+// nuh.setAttribute('href', './styles.css');
+// // style.setAttribute('class', 'css');
+// document.querySelector('head').appendChild(nuh);
+
+// document.body.style.backgroundImage = "url('./images/yellow-umbrella.jpg')";
+// const box = document.getElementById("main");
+// box.style.backgroundColor = "white";
+// box.style.width = "630px";
+// box.style.borderRadius = "4px";
+// box.style.paddingLeft = "30px";
+// document.body.style.fontFamily = "Playfair Display, sans-serif";
+// title.style.textAlign = "center";
+// source.setAttribute("style", "text-decoration:none");
+
+// box.style.
 // document.body.style.backgroundImage = "url./images/yellow-umbrella.jpg('yellow-umbrella.jpg')";
 
 

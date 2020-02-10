@@ -24,7 +24,12 @@ We are going to need to target each lane separately at some point in our program
 We need to add our stable of frogs to the app. You will find a file called `frogStable.js` in `exercise-2/assets/`.
 
 2. Link that file in your `index.html` file. It should be added right _before_ the `app.js` file is added.
+
+
+
 3. Define an empty array called `racers`. We will push random frogs from the stable into this array.
+
+
 4. Write a `for` loop that keeps pushing frogs from `frogStable` into `racers` until we have the required number of frogs (as defined by `FROGS`).
 5. Output the racers array to the console to make sure you actually have frogs in there.
 
@@ -33,22 +38,47 @@ We need to add our stable of frogs to the app. You will find a file called `frog
 We need to assign each frog to a lane.
 
 1. Duplicate `📂 exercise-2-2` folder and name it `📂 exercise-2-3`
+
 2. Use the racers array to assign each frog to a lane.
+
+
 3. We should also show the name/number of the frog in the lane. (This will involve creating at least one element inside the lane `li`)
+
+
 4. Add a class of `frog` to each of the frogs so that we can style them later.
+
+
 5. Let's also temporarily set the background color of the frog element to the color assigned to it in its object.
+
+
 6. Set the frog's progress to 0 inside its object, inside of the racers array.
+
+
 7. Add each frog's progress to the progress to the screen as well.
+
+
 8. This might also be a good time to add the stylesheet that is in the assets folder.
 
 ### Exercise 2.4 - Make 'em hop!
 
 1. Duplicate `📂 exercise-2-3` folder and name it `📂 exercise-2-4`
+
+
 2. Create a function called `racingFrog`. It will accept one parameter. This parameter will be a frog object from the racers array.
+
+
 3. We need to calculate a random distance for each hop the frog will make. Use `Math.random()` for this. It might be good to consider percentages here...
-4. Use `setInterval` to keep the frog hopping until the progress is greater than 100%. Remember to `clearInterval` once it reaches the end of the course. 
+
+
+4. Use `setInterval` to keep the frog hopping until the progress is greater than 100%. Remember to `clearInterval` once it reaches the end of the course.
+
+
 5. Write a message to the console, once the frog has reached the end.
+
+
 6. If you have ever seen a frog race, it isn't all that exciting. The frogs are generally not that motivated to reach the end... To that end, let's add a variable delay to the setInterval to simulate a frog waiting around between hops.
+
+cs
 7. "Why aren't they moving?!!" Examine the CSS file and determine what property you can modify to get them moving on the screen.
 8. Almost done! Now, call `racingFrog()` for each frog in the race. 
 
